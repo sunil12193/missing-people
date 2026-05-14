@@ -13,7 +13,8 @@ const missingPersons = [
     lastSeenDate: "2026-03-10",
     lastSeenLocation: "Delhi रेलवे स्टेशन",
     contactName: "Amit Sharma",
-    contactNumber: "9876543210"
+    contactNumber: "9876543210",
+    imageUrl: "/person-7.png"
   },
   {
     id: 2,
@@ -23,17 +24,19 @@ const missingPersons = [
     lastSeenDate: "2026-02-28",
     lastSeenLocation: "Lucknow बस स्टैंड",
     contactName: "Suresh Verma",
-    contactNumber: "9123456780"
+    contactNumber: "9123456780",
+    imageUrl: "/person-2.png"
   },
   {
     id: 3,
     name: "Ankit Singh",
-    age: 27,
+    age: 7,
     gender: "male",
     lastSeenDate: "2026-03-15",
     lastSeenLocation: "Noida सेक्टर 62",
     contactName: "Ravi Singh",
-    contactNumber: "9988776655"
+    contactNumber: "9988776655",
+    imageUrl: "/person-3.png"
   },
   {
     id: 4,
@@ -43,7 +46,8 @@ const missingPersons = [
     lastSeenDate: "2026-01-20",
     lastSeenLocation: "Kanpur मार्केट",
     contactName: "Pooja Gupta",
-    contactNumber: "9090909090"
+    contactNumber: "9090909090",
+    imageUrl: "/person-4.png"
   },
   {
     id: 5,
@@ -53,17 +57,19 @@ const missingPersons = [
     lastSeenDate: "2026-03-01",
     lastSeenLocation: "Patna जंक्शन",
     contactName: "Sunil Kumar",
-    contactNumber: "8765432109"
+    contactNumber: "8765432109",
+    imageUrl: "/person-5.png"
   },
   {
     id: 6,
     name: "Sneha Mishra",
-    age: 21,
+    age: 6,
     gender: "female",
     lastSeenDate: "2026-02-10",
     lastSeenLocation: "Varanasi घाट",
     contactName: "Rajesh Mishra",
-    contactNumber: "9012345678"
+    contactNumber: "9012345678",
+    imageUrl: "/person-6.png"
   },
   {
     id: 7,
@@ -73,7 +79,8 @@ const missingPersons = [
     lastSeenDate: "2026-03-18",
     lastSeenLocation: "Ghaziabad मॉल",
     contactName: "Mahesh Yadav",
-    contactNumber: "8899776655"
+    contactNumber: "8899776655",
+    imageUrl: "/person-15.png"
   },
   {
     id: 8,
@@ -83,7 +90,8 @@ const missingPersons = [
     lastSeenDate: "2026-01-30",
     lastSeenLocation: "Jaipur बाजार",
     contactName: "Deepak Sharma",
-    contactNumber: "9871234560"
+    contactNumber: "9871234560",
+    imageUrl: "/person-8.png"
   },
   {
     id: 9,
@@ -93,7 +101,8 @@ const missingPersons = [
     lastSeenDate: "2026-02-25",
     lastSeenLocation: "Ahmedabad स्टेशन",
     contactName: "Kiran Patel",
-    contactNumber: "9988123456"
+    contactNumber: "9988123456",
+    imageUrl: "/person-7.png"
   },
   {
     id: 10,
@@ -103,7 +112,8 @@ const missingPersons = [
     lastSeenDate: "2026-03-05",
     lastSeenLocation: "Dehradun बस स्टैंड",
     contactName: "Ramesh Joshi",
-    contactNumber: "9098123456"
+    contactNumber: "9098123456",
+    imageUrl: "/person-1.png"
   },
   {
     id: 11,
@@ -113,7 +123,8 @@ const missingPersons = [
     lastSeenDate: "2026-02-15",
     lastSeenLocation: "Bhopal मार्केट",
     contactName: "Sanjay Tiwari",
-    contactNumber: "8765012345"
+    contactNumber: "8765012345",
+    imageUrl: "/person-9.png"
   },
   {
     id: 12,
@@ -123,17 +134,19 @@ const missingPersons = [
     lastSeenDate: "2026-03-12",
     lastSeenLocation: "Chandigarh सेक्टर 17",
     contactName: "Anil Kapoor",
-    contactNumber: "9988771100"
+    contactNumber: "9988771100",
+    imageUrl: "/person-11.png"
   },
   {
     id: 13,
     name: "Deepak Chauhan",
-    age: 32,
+    age: 10,
     gender: "male",
     lastSeenDate: "2026-01-25",
     lastSeenLocation: "Meerut रोड",
     contactName: "Vijay Chauhan",
-    contactNumber: "9011223344"
+    contactNumber: "9011223344",
+    imageUrl: "/person-14.png"
   },
   {
     id: 14,
@@ -143,7 +156,8 @@ const missingPersons = [
     lastSeenDate: "2026-02-05",
     lastSeenLocation: "Prayagraj संगम",
     contactName: "Rahul Singh",
-    contactNumber: "8899001122"
+    contactNumber: "8899001122",
+    imageUrl: "/person-13.png"
   },
   {
     id: 15,
@@ -153,7 +167,8 @@ const missingPersons = [
     lastSeenDate: "2026-03-20",
     lastSeenLocation: "Indore रेलवे स्टेशन",
     contactName: "Ashok Gupta",
-    contactNumber: "7788996655"
+    contactNumber: "7788996655",
+    imageUrl: "/person-15.png"
   }
 ];
 
@@ -187,7 +202,7 @@ const AllCases = () => {
               age={person.age}
               gender={person.gender}
               lastSeen={`${person.lastSeenDate} at ${person.lastSeenLocation}`}
-              imageUrl="/user.jpeg"
+              imageUrl={person.imageUrl}
               contactName={person.contactName}
               contactNumber={person.contactNumber}
             />
